@@ -13,8 +13,8 @@ namespace
     const char *ssid = WiFiSecrets::ssid;
     const char *password = WiFiSecrets::pass;
     const char *echo_topic = "esp32/echo_test";
-    const char *lwt_topic = "esp32/lwt_test"; // Topic cho LWT
-    const char *lwt_message = "Client has disconnected unexpectedly."; // Thông điệp LWT
+    const char *lwt_topic = "esp32/lwt_test"; 
+    const char *lwt_message = "Client has disconnected unexpectedly."; 
     unsigned int publish_count = 0;
     uint16_t keepAlive = 15;    // seconds (default is 15)
     uint16_t socketTimeout = 5; // seconds (default is 15)
