@@ -50,8 +50,6 @@ void mqttReconnect()
         Serial.println("Attempting MQTT connection...");
         String client_id = "esp32-client-";
         client_id += String(WiFi.macAddress());
-
-        // Thiết lập LWT trong khi kết nối
         if (mqttClient.connect(client_id.c_str(), MQTT::username, MQTT::password, lwt_topic, 0, false, lwt_message))
         {
             Serial.print(client_id);
